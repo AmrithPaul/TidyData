@@ -37,4 +37,4 @@ TidyData <- mean_std %>%
   group_by(Subject, Activity) %>%
   summarise_all(funs(mean))
 
-write.table(TidyData, "/Users/HP/Documents/Rstudio/TidyData.txt")
+write.table(TidyData, "/Users/HP/Documents/Rstudio/TidyData.txt", row.names = FALSE)
